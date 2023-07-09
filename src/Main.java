@@ -42,7 +42,7 @@ public class Main {
         byte fertilityOneThousand = 17;
         byte mortalityOneThousand = 8;
         long growth = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             population = population + growth;
             growth = population / 1000 * (fertilityOneThousand - mortalityOneThousand);
             System.out.println("Год " + i + ", численность населения составляет " + population + ".");
